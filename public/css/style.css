@@ -548,7 +548,7 @@ tr {
 }
 
 img {
-    width: 300px;
+    width: 230px;
     margin: 0 auto;
     display: block;
     max-width: 100%;
@@ -711,8 +711,9 @@ html .bg-color {
 }
 
 .bg-primary {
-  background-color: #5e9bbb !important
+  background-color: #267292  !important
 }
+
 
 [class*="bg-overlay-"] {
   position: absolute;
@@ -1095,19 +1096,19 @@ html .bg-color {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #5e9bbb;
+  background-color: #5dbddd;
   border: 1px solid transparent;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background-color: #222;
+  background-color:#297493;
 }
 
 .btn.btn-black,
 .btn.btn-black-2 {
   color: #fff;
-  background-color: #111;
+  background-color: #297493;
   border: 1px solid transparent;
 }
 
@@ -2882,11 +2883,11 @@ select.country + .select2 .select2-selection--single .select2-selection__arrow {
 
 .header .main-header.main-header-3 {
   background-color: #fff;
-  padding: 10px 0 10px 0;
+  padding: 16px 0 20px 0;
 }
 
 .header .main-header.main-header-3 .navigation ul > li > a {
-  color: #444;
+  color: #828282;
 }
 
 .header .main-header.main-header-3 .navigation ul > li.menu-item-has-children > ul.sub-menu > li > a {
@@ -3581,7 +3582,7 @@ select.country + .select2 .select2-selection--single .select2-selection__arrow {
 .footer .foot-widget .widget .widget-title {
     margin-bottom: 15px;
     color: #fff;
-    padding-top: 61px;
+  
 
 }
 
@@ -3591,19 +3592,19 @@ select.country + .select2 .select2-selection--single .select2-selection__arrow {
 
 .footer .foot-widget .widget ul li {
   line-height: 3.1em;
-  color: #878787;
+  color: white;
 }
 
 .footer .foot-widget .widget ul li:hover {
-  color: #fff;
+  color: white;
 }
 
 .footer .foot-widget .widget ul li:hover a {
-  color: #fff;
+  color:white;
 }
 
 .footer .foot-widget .widget p {
-  color: #888;
+  color: white;
   text-align: justify;
   padding: 0px 16px;
 }
@@ -6707,3 +6708,108 @@ button.mfp-arrow:after {
   }
 }
 
+
+.features_item .f_item_icon{
+    float: left;
+    width:15%;
+    display: inline-block;
+    margin-right: 15px;
+}
+.features_item .f_item_icon i{
+    font-size:4rem;
+    color:#5bc0de !important;
+}
+.features_item .f_item_text{
+    display: inline-block;
+    width:75%;
+}
+.features_item .f_item_text p{
+    font-size:14px;
+}
+
+
+.home{
+    background: url(../../images/hcp.jpg) no-repeat scroll  center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 220px;
+    padding-bottom: 190px;
+    width:100%;
+}
+.main_home .home_text h2{
+    font-size:36px;
+    font-weight: 400;
+}
+.main_home .home_text h1{
+    font-size:48px;
+    font-weight: 700;
+}
+.main_home .home_text h3{
+    font-size:24px;
+    font-weight: 400;
+}
+.main_home .slick-dots li button::before {
+    font-family: slick;
+    font-size: 8px;
+    line-height: 7px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    content: "";
+    text-align: center;
+    opacity: 0.9;
+    color: white;
+    border:1px solid #fff;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+}
+.main_home .slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+.main_home .slick-dots li.slick-active button:before{
+    opacity: 1;
+    background-color: #00a885;
+}
+.main_home .slick-dots{
+    bottom: -200px;
+}
+
+.work_container .slick-arrow ,
+.main_home .slick-arrow{
+    font-size:3rem;
+    color:#fff;
+    top:30%;
+    position: absolute;
+    z-index: 90;
+    cursor: pointer;  
+}
+.main_home .nextprevleft{
+    left:-3%;
+}
+.main_home .nextprevright{
+    right:-3%;
+}
+.home_btns{
+    margin-left:-10px;
+}
+.home_btns a{
+    margin-left:10px;
+}
+.overlay1
+{
+      background-color: rgba(41, 39, 34, 0.50);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.text-white
+{
+  color: white;
+}

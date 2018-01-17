@@ -1,15 +1,15 @@
 <div id="preload" class="preload">
     <div class="flat"></div>
-    <div class="square"><img width="100px" src="../../images/simbolo.png" alt=""></div>
+    <!--<div class="square"><img width="100px" src="../../images/simbolo.png" alt=""></div>
     <div class="square-2"><img src="../../images/simbolo.png" alt=""></div>
     <div class="square-3"><img src="../../images/simbolo.png" alt=""></div>
-    <div class="square-4"><img src="../../images/simbolo.png" alt=""></div>
+    <div class="square-4"><img src="../../images/simbolo.png" alt=""></div>-->
 </div>
 <!-- /END PRELOAD -->
 
 <!-- HEADER 1 -->
-<header id="header" class="header head1">
-    <div class="searchbar searchbar-light">
+<header class="header head3">
+    <div class="searchbar">
         <div class="container">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-search"></i></span>
@@ -19,16 +19,38 @@
         </div><!-- /container -->
     </div><!-- /searchbar -->
 
-    <div class="main-header main-header-1 bd-b-alpha">
+    <div class="top-header">
+        <div class="container">
+            <div class="top-left">
+                <ul class="social-header">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               
+                </ul><!-- /social-header -->
+            </div><!-- /top-left -->
+            <div class="top-right">
+                <ul class="info-header">
+                    <li><i class="icon icon-phone"></i>(547) 5818740</li>
+                     <li><i class="fa fa-mobile"></i>+57 317 4411859</li>
+                                <li><i class="fa fa-envelope-o"></i><a href="#">alejovelez10@gmail.com</a></li>
+                    
+                </ul><!-- /info-header -->
+            </div><!-- /top-right -->
+        </div><!-- /container -->
+    </div><!-- /top-header -->
+
+    <div class="main-header main-header-3">
         <div class="container">
             <!-- LOGO -->
             <div class="logo">
-                <a href="index.html"><img src="../../img/logo1.png" alt="logo" /></a>
+                <a href="index.html"><img src="../../img/logo.jpg" alt="logo" /></a>
             </div><!-- /#logo -->
             <!-- END / LOGO -->
 
             <!-- MOBILE MENU -->
-            <div class="mobile-nav-menu" data-menu-number="1">
+            <div class="mobile-nav-menu" data-menu-number="3">
                 <span class="icon">&nbsp;</span>
             </div><!-- /mobile-nav-menu -->
             <!-- /END MOBILE MENU -->
@@ -38,24 +60,21 @@
             <!-- END / SEARCH BUTTON -->
 
             <!-- NAVIGATION -->
-            <nav class="navigation nav1" data-menu-type="1199">
+            <nav class="navigation nav3" data-menu-type="1199">
                 <ul class="nav text-uppercase">
                     <li>
-                       <%= link_to "Inicio", inicio_path,  data: { turbolinks: false }%>
+                        <a href="#home" class = "active">Inicio</a>
                     </li>
       
-                    <li ><%= link_to "Quiénes Somos", nosotros_path,  data: { turbolinks: false }%>
-                    </li>
-                    <li><%= link_to "Servicios", servicios_path,  data: { turbolinks: false }%></li>
-                    <li>
-                        <%= link_to "Experiencia", experiencias_path,  data: { turbolinks: false }%>
-                       
-                    </li>
-                  
-                    <li><%=link_to "Blog", noticias_path("todas"),  data: { turbolinks: false }%></li>
-                    <li><%=link_to "Concactenos", contactenos_path,  data: { turbolinks: false }%></li>
-                    <li><%=link_to "pqrs", pqrf_path,  data: { turbolinks: false }%></li>
-
+                   
+                    
+                    <li> <a href="#caracteristicas">Caracteristicas</a></li>
+                                     
+                   
+                    <li> <a href="#precios">Precios</a></li>
+                    <li> <a href="#contactenos">Contactenos</a></li>
+                     <li> <a href="https://psicloud.herokuapp.com/users/sign_in">INGRESAR</a></li>
+                     <li> <a href="https://psicloud.herokuapp.com/users/sign_up" class="btn btn-primary" style="color:white">Crear Cuenta</a></li>
                 </ul><!-- /nav -->
             </nav>
             <!-- END / NAVIGATION -->
@@ -66,479 +85,373 @@
 
 <div id="page-wrap">
     <!-- HOME MEDIA -->
-    <section id="home-media" class="section pt-0 pb-0" data-home-media="760">
-        <div class="tp-banner-container">
-            <div class="tp-banner" >
-                <ul>
-                                    <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="../../img/slider/thumb/thumb-1.jpg"  data-saveperformance="on" data-title="Slider 1">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../img/slider/dummy.png"  alt="slidebg1" data-lazyload="../../img/slider/nueva.png" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption grey_heavy_72 lfl tp-resizeme rs-parallaxlevel-0 tp-headline"
-                            data-x="center"
-                            data-y="300"
-                            data-speed="500"
-                            data-start="1350"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;font-size: 80px;">Ingeniería y proyectos
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption grey_heavy_72 lfr tp-resizeme rs-parallaxlevel-0 tp-headline-3"
-                            data-x="center"
-                            data-y="370"
-                            data-speed="500"
-                            data-start="1650"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; font-style: normal;max-width: auto; max-height: auto; white-space: nowrap;font-size: 50px;color:#0ab0ff">Procesos dinamicos que suman mucho mas
-                        </div>
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption grey_heavy_72 fade tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="440"
-                            data-speed="500"
-                            data-start="2550"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">                        <%= link_to "Quiénes Somos", nosotros_path ,class: "btn btn-primary",  data: { turbolinks: false }%>
-                        </div>
- </li>
-
-
-                    <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="../../images/construccion.jpg"  data-saveperformance="on"  data-title="Slider 3">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../img/slider/dummy.png"  alt="slidebg1" data-lazyload="../../images/construccion.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-3"
-                            data-x="center"
-                            data-y="280"
-                            data-speed="500"
-                            data-start="1050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-2"
-                            data-x="center"
-                            data-y="350"
-                            data-speed="500"
-                            data-start="1350"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;font-size:90px">Ingeniería Electrica
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="430"
-                            data-hoffset="-83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Quiénes Somos", nosotros_path ,class: "btn btn-primary",  data: { turbolinks: false }%>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption grey_heavy_72 sfr tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="430"
-                            data-hoffset="83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Ver mas", servicio_path(1) ,class: "btn btn-transparent",  data: { turbolinks: false }%>
-                        </div>
-                    </li>
-                                    <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="../../images/construccion.jpg"  data-saveperformance="on"  data-title="Slider 3">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../img/slider/instrumentacion.jpg"  alt="slidebg1" data-lazyload="../../img/slider/instrumentacion.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-3"
-                            data-x="center"
-                            data-y="280"
-                            data-speed="500"
-                            data-start="1050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-2"
-                            data-x="center"
-                            data-y="300"
-                            data-speed="500"
-                            data-start="1350"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;font-size: 70px;">Instrumentacion industrial y Control
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="380"
-                            data-hoffset="-83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Quiénes Somos", nosotros_path ,class: "btn btn-primary",  data: { turbolinks: false }%>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption grey_heavy_72 sfr tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="380"
-                            data-hoffset="83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Ver mas", servicio_path(2) ,class: "btn btn-transparent",  data: { turbolinks: false }%>
-                        </div>
-                    </li>
-
-
-                                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="../../images/construccion.jpg"  data-saveperformance="on"  data-title="Slider 3">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../img/slider/dummy.png"  alt="slidebg1" data-lazyload="../../img/slider/teleco.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-3"
-                            data-x="center"
-                            data-y="280"
-                            data-speed="500"
-                            data-start="1050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-2"
-                            data-x="center"
-                            data-y="350"
-                            data-speed="500"
-                            data-start="1350"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;font-size:90px">Telecomunicaciones
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="430"
-                            data-hoffset="-83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Quiénes Somos", nosotros_path ,class: "btn btn-primary",  data: { turbolinks: false }%>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption grey_heavy_72 sfr tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="430"
-                            data-hoffset="83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Ver mas", servicio_path(3) ,class: "btn btn-transparent",  data: { turbolinks: false }%>
-                        </div>
-                    </li>
-
-
-
-                                        <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="../../images/construccion.jpg"  data-saveperformance="on"  data-title="Slider 3">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../img/slider/dummy.png"  alt="slidebg1" data-lazyload="../../img/slider/auditoria.png" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-3"
-                            data-x="center"
-                            data-y="280"
-                            data-speed="500"
-                            data-start="1050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-2"
-                            data-x="center"
-                            data-y="350"
-                            data-speed="500"
-                            data-start="1350"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="lines"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="font-family: 'Rajdhani', sans-serif;z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;font-size: 80px;">CONSULTORÍA E INTERVENTORÍA 
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="430"
-                            data-hoffset="-83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Quiénes Somos", nosotros_path ,class: "btn btn-primary",  data: { turbolinks: false }%>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption grey_heavy_72 sfr tp-resizeme rs-parallaxlevel-0"
-                            data-x="center"
-                            data-y="430"
-                            data-hoffset="83"
-                            data-speed="500"
-                            data-start="2050"
-                            data-easing="Power3.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0.1"
-                            data-endelementdelay="0.1"
-                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><%= link_to "Ver mas", servicio_path(4) ,class: "btn btn-transparent",  data: { turbolinks: false }%>
-                        </div>
-                    </li>
-                    <!-- SLIDE 3 -->
-
-                </ul>
-                <div class="tp-bannertimer"></div>
-            </div><!-- /tp-banner -->
-        </div><!-- /tp-banner-container -->
-    </section>
-    <!-- END / HOME MEDIA -->
-    <section class="section bg-primary pt-20 pb-20">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-sm-12 col-xs-12">
-                    <h3 class="play-font fsi mb-0 text-center text-left-md" style="line-height: 2.3em;color:white">Nosotros somos mas que constructores - nosotros somos partners</h3>
-                </div><!-- /col -->
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-          
-                    <%=link_to "Solicitar Cotización", contactenos_path, class: "btn btn-black"%>
-                </div><!-- /col -->
-            </div><!-- /row -->
-        </div><!-- /container -->
-    </section>
-    <!-- ABOUT -->
-    <section class="section bg-white bd-b pt-70 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <h2 class="section-header big">Nuestra Empresa</h2>
-                    <p>Ingeniería y Proyectos Sigma S.A.S. es una empresa de Ingeniería, montaje y consultoría en las áreas eléctrica, instrumentación industrial, control y telecomunicaciones, la cual desarrolla sus trabajos bajo metodologías eficientes que generan valor en la planeación, ejecución, seguimiento y cierre de proyectos, con amplia experiencia en el sector industrial. El mayor interés de ingeniería y proyectos Sigma S.A.S. es ofrecer un servicio integral, dinámico y responsable el cual este orientado a la satisfacción de los objetivos de nuestros clientes y aliados. </p>
-
-                    <div class="divider pt-30 pb-40"></div>
-
+    <section id="home" class="home bg-black fix">
+                <div class="overlay1"></div>
+                <div class="container">
                     <div class="row">
-                      <div class="col-lg-12">
-                              <h2 class="section-header big">NUESTROS SERVICIOS</h2>
-                        </div>
-                        <%  @services.each do |service|%>
-
-                              <div class="col-lg-6 col-sm-6 col-xs-12" style = "margin-bottom: 35px;">
-                            <h3 class="h4 text-uppercase mb-10 service"><a href="service-single.html"><%= service.name%> <br><br></a></h3>
-                            <div class="post-thumbnail hover-link">
-                                <%= (image_tag service.service_images.where(order: 1).first.imagen_url , class:"service-img" )%>
-                                
-                              <%=link_to servicio_path(service.id), class:"overlay ov",   data: { turbolinks: false } do %>
-                               <i class="fa fa-link"></i></a>
-                          <%end%>
-                            </div><!--/ post-thumbnail -->
-                            <div class="mb-30 service-desc">
-                                <p><%== service.description%></p>
+                        <div class="main_home text-center">
+                            <div class="col-md-12">
+                                <div class="hello_slid">
+                                    <div class="slid_item">
+                                        <div class="home_text ">
+                                            <h2 class="text-white">Bienvenido a<strong> Psicloud</strong></h2>
+                                            <h1 class="text-white">Historia Clinica para Psicologos</h1>
+                                  
+                                        </div>
+<br>
+                                        <div class="home_btns m-top-60">
+                                            <a href="" class="btn btn-primary m-top-20">Probar Ahora</a>
+                                            <a href="" class="btn btn-default m-top-20">Contactanos</a>
+                                        </div>
+                                    </div><!-- End off slid item -->
+                             
+                                </div>
                             </div>
-                            <%= link_to "Ver mas", servicio_path(service) ,class: "btn btn-primary radius mb-30",  data: { turbolinks: false } %>
-                               
+
                         </div>
 
 
-                        <%end%>
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+    <!-- END / HOME MEDIA -->
 
-               
-                    </div><!-- /row -->
-                </div><!-- /col -->
 
-              
-            </div><!-- /row -->
-        </div><!-- /container -->
-    </section>
-    <!-- END / ABOUT -->
+       <section id="caracteristicas" class="features" style="padding: 50px 10px;background: white;">
+                <div class="container">
+                    <div class="row">
+                          <h2 class="section-header center" style="font-size:20px">Caracteristicas</h2><br>
+                        <div class="main_features fix roomy-70">
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
 
-    <!-- TESTIMONIAL - CLIENT -->
-   
-    <!-- END / TESTIMONIAL - CLIENT -->
+                                    </div>
+                                    <div class="f_item_text text-justify">
+                                        <h3>Administre sus pacientes</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-tablet"></i>
+                                    </div>
+                                    <div class="f_item_text text-justify">
+                                        <h3>Cree Historia Clinica Digital</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                       <i class="fa fa-files-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="f_item_text text-justify">
+                                        <h3>Gestion de Archivos</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                            <br><br><br>
+                                
+                            </div>
+                             <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="f_item_text text-justify">
+                                        <h3>Gestion de Citas</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                         <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                      
+<i class="fa fa-file-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="f_item_text text-justify">
+                                        <h3>Gestion de Formatos</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                         <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                      <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="f_item_text text-justify">
+                                        <h3>Estadisticas</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
 
-    <!-- ICON BOX -->
-    <%if @experiences.count != 0%>
-        <section class="section pt-60 pb-60 bg-parallax1" data-background="../../images/construccion.jpg">
-        <div class="bg-overlay-black bg-overlay-7"></div>
-        <div class="container">
-            <h2 class="section-header big" data-section-center="991">Nuestra Experiencia</h2>
-            <ul class="portfolio-selector">
-               <!-- <li><a href="#">Office</a></li>
-                <li><a href="#">Building</a></li>
-                <li><a href="#">Museum</a></li>
-                <li><a href="#">Urban</a></li>
-                <li><a href="#">House</a></li>
-            </ul><!-- /portfolio-selector -->
-        </div><!-- /container -->
+                            </div>
 
-        <div class="portfolio-slider">
+                        
 
-            <% @experiences.each do |exp|%>    
-            <div class="portfolio-item">
-                <div class="portfolio-media hover-link">
-                    <%=image_tag exp.experience_images.where(order: 1).first.image_url if exp.experience_images.where(order: 1).first.image_url %>
-                    <%=link_to experiencia_path(exp.id), class:"overlay",   data: { turbolinks: false } do %>
-                          <i class="fa fa-link"></i></a>
-                          <%end%>
-                    
-                </div><!-- /hover-link -->
-                <h5 class="text-uppercase text-center"><a href="work-single.html"><%=exp.name%></a></h5>
-            </div><!-- /portfolio-item -->
-<%end%>
 
-        
-        </div><!-- /portfolio-slider -->
-    </section>
-    <%end%>
-    <section class="section bg-white pt-50 pb-0">
-        <div class="container">
-            <div class="row">
-    <div class="col-md-12  col-sm-12 col-xs-12">
-                    <div id="content" class="site-content">
-                        <main id="main">
-          
 
-                          
 
-                            <div class="row">
 
-                            <h2 class="section-header big">Nuestros Valores</h2>
-                                <div class="col-sm-6 col-xs-12">
-                                    <div class="cortana-icon">
-                                        <i class="fa fa-briefcase"></i>
-                                        <h5 class="text-uppercase">Servicio</h5>
-                                        <p style="text-align: justify">Todas nuestras acciones están dirigidas a un trabajo comprometido, cordial y eficiente, para brindar satisfacción a las necesidades de nuestro cliente en todo momento.</p>
-                                    </div><!-- /cortana-icon -->
+                        </div>
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off Featured Section-->
 
-                                    <div class="cortana-icon">
-                                        <i class="fa fa-rocket"></i>
-                                        <h5 class="text-uppercase">Dinamismo</h5>
-                                        <p style="text-align: justify">Ofreciendo servicios ágiles, flexibles, oportunos y sobretodo somos un equipo de trabajo con profesionales de mente abierta, innovador y con una visión compartida frente a los cambios.</p>
-                                    </div><!-- /cortana-icon -->
 
-                                    <div class="cortana-icon">
-                                        <i class="fa fa-eye"></i>
-                                        <h5 class="text-uppercase">Responsabilidad</h5>
-                                        <p style="text-align: justify">Somos responsables frente a nuestras obligaciones, con la empresa, el cliente y la sociedad; Planeamos y controlamos el desarrollo de proyectos garantizando la entrega oportuna de manera integral cumpliendo con el alcance y los objetivos planteados, de igual forma con el medio ambiente y el entorno.</p>
-                                    </div><!-- /cortana-icon -->
 
+
+ <section id="features" class="features" style="padding: 50px 10px;background: #3b9bb9;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="main_features fix roomy-70">
+                            <div class="col-md-4 text-center">
+
+                             <div class="text-center" style="margin-bottom:20px;">
+                                 
+                             <i class="fa fa-cloud" style = "    padding: 24px;color:#3b9bb9;
+    background: white;
+    font-size: 40px;
+    border-radius: 50%;" aria-hidden="true"></i></div>
+                                <div class="features_item sm-m-top-30">
+                                   
+                                       
+
+                                   
+                                    <div class="f_item_text">
+                                        <h3 style = "color:white">100% en la nube</h3>
+                                        <p style = "color:white">Psicloud es una aplicación online, diseñada para psicologos, por estar en la nube puedes acceder a tu cuenta desde cualquier lugar y dispositivo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-4 text-center">
+
+                             <div class="text-center" style="margin-bottom:20px;">
+                                 
+                             <i class="fa fa-lock" style = "       padding: 24px 32px;;color:#3b9bb9;
+    background: white;
+    font-size: 40px;
+    border-radius: 50%;" aria-hidden="true"></i></div>
+                                <div class="features_item sm-m-top-30">
+                                   
+                                       
+
+                                   
+                                    <div class="f_item_text">
+                                        <h3 style = "color:white">Seguridad</h3>
+                                        <p style = "color:white">La información de tus pacientes siempre protegida por los mejores sistemas de seguridad, hospedada en los servidores especializados de Amazon, no tienes que preocuparte por copias de seguridad o costosa infraestructura.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="text-center" style="margin-bottom:20px;">
+                                 
+                            <i class="fa fa-clock-o" style = "    padding: 24px;color:#3b9bb9;
+    background: white;
+    font-size: 40px;
+    border-radius: 50%;" aria-hidden="true"></i></div>
+                                <div class="features_item sm-m-top-30">
                                     
-                                </div><!-- /col -->
+                                    <div class="f_item_text ">
+                                        <h3 style = "color:white">Actualizaciones en <br>tiempo real</h3>
+                                        <p style = "color:white">Cada vez que ingresas a Psicloud, tienes acceso instantáneo a la versión más reciente de tu Aplicación.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-12">
+                            <br><br><br>
+                                
+                            </div>
 
-                                <div class="col-sm-6 col-xs-12">
-                                <div class="cortana-icon">
-                                        <i class="fa fa-thumbs-o-up"></i>
-                                        <h5 class="text-uppercase">Transparencia</h5>
-                                        <p style="text-align: justify">Realizamos todos los procesos, operaciones y acuerdos internos y externos de la compañía con honestidad y rectitud, obrando de forma clara, evidente y no generando ambigüedad con nuestros colaboradores, clientes o proveedores.</p>
-                                    </div><!-- /cortana-icon -->
-                                    <div class="cortana-icon">
-                                        <i class="fa fa-handshake-o"></i>
-                                        <h5 class="text-uppercase">Confianza</h5>
-                                        <p style="text-align: justify">Trabajamos para que nuestros equipo de colaboradores, clientes y proveedores se sientan seguros, con la certeza que nuestra empresa trabaja con la convicción de hacer mejor las cosas de forma integral, responsable y ofreciendo un precio justo y razonable.</p>
-                                    </div><!-- /cortana-icon -->
 
-                                    <div class="cortana-icon">
-                                        <i class="fa fa-users"></i>
-                                        <h5 class="text-uppercase">Trabajo en equipo</h5>
-                                        <p style="text-align: justify">Impulsamos e incentivamos el trabajo cooperativo dentro de la organización, mejorando las sinergias de nuestros procesos internos y externos, obteniendo el máximo de las capacidades de nuestro talento humano y asegurando el aprendizaje organizacional de la compañía.</p>
-                                    </div><!-- /cortana-icon -->
+                        
 
-                 
 
-                                </div><!-- /col -->
+
+                        
+
+                        </div>
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off Featured Section-->
+
+
+
+
+<div class="wrapper" id = "precios">
+        <!-- PRICING-TABLE CONTAINER -->
+        <br><br>
+        <h2 class="section-header center" style="font-size: 20px;margin-left:20px;">Precios</h2>
+        <div class="pricing-table group">
+              
+            <!-- PERSONAL -->
+            <div class="block personal fl">
+                <h2 class="title">personal</h2>
+                <!-- CONTENT -->
+                <div class="content">
+                    <p class="price">
+                        <sup>$</sup>
+                        <span>29</span>
+                        <sub>/mo.</sub>
+                    </p>
+                    <p class="hint">Perfect for freelancers</p>
+                </div>
+                <!-- /CONTENT -->
+                <!-- FEATURES -->
+                <ul class="features">
+                    <li><span class="fontawesome-cog"></span>1 WordPress Install</li>
+                    <li><span class="fontawesome-star"></span>25,000 visits/mo.</li>
+                    <li><span class="fontawesome-dashboard"></span>Unlimited Data Transfer</li>
+                    <li><span class="fontawesome-cloud"></span>10GB Local Storage</li>
+                </ul>
+                <!-- /FEATURES -->
+                <!-- PT-FOOTER -->
+                <div class="pt-footer">
+                    <p>Host My Website</p>
+                </div>
+                <!-- /PT-FOOTER -->
+            </div>
+            <!-- /PERSONAL -->
+            <!-- PROFESSIONAL -->
+            <div class="block professional fl">
+                <h2 class="title">Para pequeñas Clinicas</h2>
+                <!-- CONTENT -->
+                <div class="content">
+                    <p class="price">
+                        <sup>$</sup>
+                        <span>99</span>
+                        <sub>/mo.</sub>
+                    </p>
+                    <p class="hint">Suitable for startups</p>
+                </div>
+                <!-- /CONTENT -->
+                <!-- FEATURES -->
+                <ul class="features">
+                    <li><span class="fontawesome-cog"></span>10 WordPress Install</li>
+                    <li><span class="fontawesome-star"></span>100,000 visits/mo.</li>
+                    <li><span class="fontawesome-dashboard"></span>Unlimited Data Transfer</li>
+                    <li><span class="fontawesome-cloud"></span>20GB Local Storage</li>
+                </ul>
+                <!-- /FEATURES -->
+                <!-- PT-FOOTER -->
+                <div class="pt-footer">
+                    <p>Host My Website</p>
+                </div>
+                <!-- /PT-FOOTER -->
+            </div>
+            <!-- /PROFESSIONAL -->
+            <!-- BUSINESS -->
+            <div class="block business fl">
+                <h2 class="title">Para grandes Clinicas</h2>
+                <!-- CONTENT -->
+                <div class="content">
+                    <p class="price">
+                        <sup>$</sup>
+                        <span>249</span>
+                        <sub>/mo.</sub>
+                    </p>
+                    <p class="hint">Para Clinicas </p>
+                </div>
+                <!-- /CONTENT -->
+
+                <!-- FEATURES -->
+                <ul class="features">
+                    <li><span class="fontawesome-cog"></span>25 WordPress Install</li>
+                    <li><span class="fontawesome-star"></span>400,000 visits/mo.</li>
+                    <li><span class="fontawesome-dashboard"></span>Unlimited Data Transfer</li>
+                    <li><span class="fontawesome-cloud"></span>30GB Local Storage</li>
+                </ul>
+                <!-- /FEATURES -->
+
+                <!-- PT-FOOTER -->
+                <div class="pt-footer">
+                    <p>Host My Website</p>
+                </div>
+                <!-- /PT-FOOTER -->
+            </div>
+            <!-- /BUSINESS -->
+        </div>
+        <!-- /PRICING-TABLE -->
+    </div>
+    <!-- ABOUT -->
+
+
+
+<section class="section bg-white bd-b pt-50 pb-50" id = "testimonios">
+        <div class="container">
+            <h2 class="section-header center" style="font-size:20px;">Testimonios</h2>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="testimonial testimonial-slider" data-number-slide="2">
+                        <div class="item">
+                            <div class="testimonial-status">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</div>
+                            <div class="testimonial-author clearfix">
+                                <img src="img/team/1.jpg" alt="" class="img-circle" />
+                                <h5 class="text-uppercase text-right">Mark Alexis</h5>
+                                <p class=" text-right">Ceo &amp; Founder - envato</p>
+                            </div><!-- /testimonial-author -->
+                        </div><!-- /item -->
+
+                        <div class="item">
+                            <div class="testimonial-status">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</div>
+                            <div class="testimonial-author clearfix">
+                                <img src="img/team/2.jpg" alt="" class="img-circle" />
+                                <h5 class="text-uppercase text-right">Jennifer Holland</h5>
+                                <p class=" text-right">Ceo &amp; Founder - envato</p>
+                            </div><!-- /testimonial-author -->
+                        </div><!-- /item -->
+
+                        <div class="item">
+                            <div class="testimonial-status">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</div>
+                            <div class="testimonial-author clearfix">
+                                <img src="img/team/3.jpg" alt="" class="img-circle" />
+                                <h5 class="text-uppercase text-right">Maurell Parker</h5>
+                                <p class=" text-right">Ceo &amp; Founder - envato</p>
+                            </div><!-- /testimonial-author -->
+                        </div><!-- /item -->
+
+                        <div class="item">
+                            <div class="testimonial-status">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</div>
+                            <div class="testimonial-author clearfix">
+                                <img src="img/team/4.jpg" alt="" class="img-circle" />
+                                <h5 class="text-uppercase text-right">David Coulson</h5>
+                                <p class=" text-right">Ceo &amp; Founder - envato</p>
+                            </div><!-- /testimonial-author -->
+                        </div><!-- /item -->
+                    </div><!-- /testimonial -->
+                </div><!-- /col -->
             </div><!-- /row -->
+
+          
         </div><!-- /container -->
     </section>
+
+
+
+
+
+
+
+
+
+
     <!-- END / ICON BOX -->
 
     <!-- PORTFOLIO 1 -->
@@ -546,34 +459,7 @@
     <!-- END / PORTFOLIO 1 -->
 
     <!-- COUNTER 1 -->
-    <section class="section bg-parallax1" style = "padding:40px 0px" data-background="../../img/bg/demo1.jpg">
-        <div class="bg-overlay-black bg-overlay-7"></div>
-        <div class="container">
-            <div class="row">
-             <h1 class="section-header" data-section-center="767">Datos de nuestros lideres</h1>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="counter">
-                        <p class="count-number">60</p>
-                        <h3>Proyectos Ejecutados</h3>
-                    </div><!-- /counter -->
-                </div><!-- /col -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="counter">
-                        <p class="count-number">30</p>
-                        <h3>Clientes Satisfechos</h3>
-                    </div><!-- /counter -->
-                </div><!-- /col -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="counter">
-                        <p class="count-number">3468</p>
-                        <h3>Horas en Proyectos</h3>
-                    </div><!-- /counter -->
-                </div><!-- /col -->
-
-            </div><!-- /row -->
-        </div><!-- /container -->
-        <div class="stat-trigger"></div>
-    </section>
+   
     <!-- END / COUNTER 1 -->
     
     <!-- NEWS -->
@@ -581,183 +467,85 @@
     <!-- END / NEWS -->
 
     <!-- OUR LEADERS -->
-    <section class="section bg-white pt-60 pb-60">
-        <div class="container">
-            <h2 class="section-header" data-section-center="767">Nuestro Equipo</h2>
-            <div class="row">
-
-                <%@team.each do |team|%>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="team-leader">
-                        <div class="avatar hover-link">
-                            <%= image_tag team.image_url if team.image_url%>
-                          <%=link_to equipo_path(team.id), class:"overlay",   data: { turbolinks: false } do %>
-                          <i class="fa fa-link"></i>
-                          <%end%>
-                     
-                        </div><!-- /avatar -->
-                        <h4 class="h5 text-uppercase"><%=team.name%></h4>
-                        <h5><%=team.position%></h5>
-                        <p class="mb-20" data-number-line="5"><%=team.description%></p>
-                        <ul class="social-list black">
-                         <li><a href="<%=team.linkedin%>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="<%=team.twitter%>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                           
-                       
-                            
-                        </ul>
-                    </div><!-- /team-leader -->
-                </div><!-- /col -->
-
-                <%end%>
-
-
-
-            </div><!-- /row -->
-
-        
-        </div><!-- /container -->
-    </section>
-    <%if @noticias.count != 0%>
-     <section class="section bg-gray bd-b pt-60 pb-20">
-        <div class="container">
-            <h2 class="section-header">Noticias</h2>
-            <div class="row">
-              <%@noticias.each do |noticia|%>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <article class="post post-style-2">
-                        <div class="post-thumbnail hover-link">
-                            <%if noticia.image_url %>
-                                    <%=image_tag noticia.image_url , style: "height: 215px;"%>
-                                    <%else%>
-                                     <img src="img/news/1.jpg" alt="" />
-                                    <%end%> 
-                             <%=link_to noticia_path(noticia.id), class:"overlay",   data: { turbolinks: false } do %>
-                                     <i class="fa fa-link"></i></a>
-                                    <%end%>
-                        </div><!--/ post-thumbnail -->
-
-                        <header class="entry-header">
-                            <h2 class="entry-title h5" data-number-line="2"><a href="news-single.html">Finding new buildings in the dust</a></h2>
-                        </header>
-
-                       <div class="entry-content" >
-                                <div style="overflow: hidden;height: 100px;max-height: 100px;">
-                                     <%==noticia.description%>
-
-                                 </div><%=link_to "Leer mas",  noticia_path(noticia.id), class: "more-link"%>
-                                                                    
-                                </div><!-- /entry-content -->
-
-                        <footer class="entry-footer">
-                            <span class="posted-on"><i class="fa fa-calendar"></i><a href="#"><%=get_date(noticia.created_at)%></a></span>
-                            <span class="comments-link"><i class="fa fa-comments-o"></i><a href="#">No comment</a></span>
-                        </footer>
-                    </article><!-- /post -->
-                </div><!-- /col -->
-              <%end%>  
-          
-    </section>
-<%end%>
-    <%if @customers.count != 0%>
-    <section class="section bg-white pt-60 pb-60">
-        <div class="container">
-            <h2 class="section-header">Our Clients</h2>
-            <div class="client-slider">
-            <%@customers.each do |cus|%>
-
-                <div class="client-logo">
-                   <%= image_tag cus.logo_url if cus.logo_url%>
-                 
-                </div><!-- /client-logo -->
-                <%end%>
-            </div><!-- /client-slider -->
-        </div><!-- /container -->
-    </section>
-    <!-- END / OUR LEADERS -->
- <%end%>
-    <!-- GET QUOTE -->
-    <section class="section bg-primary pt-20 pb-20">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-sm-12 col-xs-12">
-                    <h3 class="play-font fsi mb-0 text-center text-left-md" style="line-height: 2.3em;color:white">Nosotros somos mas que constructores - nosotros somos parters</h3>
-                </div><!-- /col -->
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="text-center text-right-md"> <%=link_to "Solicitar Cotización", contactenos_path, class: "btn btn-black"%></div>
-                </div><!-- /col -->
-            </div><!-- /row -->
-        </div><!-- /container -->
-    </section>
+   
+   
     <!-- END / GET QUOTE -->
 
     <!-- FOOTER -->
-    <footer id="footer" class="footer bg-dark">
+    <footer id="contactenos" class="footer bg-primary">
         <div class="foot-widget">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <aside class="widget widget_about">
-                            <div class="logo">
-                                <a href="index.html"><img src="../../img/logo1.png" alt="logo" /></a>
-                            </div><!-- /#logo -->
-                            <p>Ingeniería y Proyectos Sigma S.A.S. es una empresa de Ingeniería, montaje y consultoría en las áreas eléctrica, instrumentación industrial, control y telecomunicaciones.</p>
-                            <ul class="social-list">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="icon icon-flickr"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </aside><!-- /widget_about -->
-                    </div><!-- /col -->
+                  
 
-                    <div class="col-md-3 col-md-push-6 col-sm-6 col-xs-12">
-                        <aside class="widget widget_subscribe">
-                             <div class="alert alert-success" style="margin-top:5px;display:none">
-                Gracias por suscribirte.
-            </div>     
-                            <h3 class="widget-title h4">Suscribete a nuestro blog</h3>
-
-                            <%=form_tag create_contacto_path, method: :post, remote: true do %>
-                                 <%= text_field_tag :name, nil,placeholder: "Nombre", class: "black mb-30" %>
-                                 <%= email_field_tag :email, nil, placeholder: "Email", class: "black mb-30" %>
-                                 <%= text_field_tag :company, nil, placeholder: "Empresa", class: "black mb-30" %>
-                                 <%= hidden_field_tag :subject, "suscripcion" %>
-                                 <%= submit_tag "Suscribirme", class: "btn btn-primary"%>
-                            <%end%>
-                          
-                    
-                        </aside><!-- /widget_subscribe -->
-                    </div><!-- /col -->
+                   
 
                     <div class="clearfix hidden-lg hidden-md hidden-xs"></div>
 
-                    <div class="col-md-3 col-md-pull-3 col-sm-6 col-xs-12">
+                    <div class="col-md-6">
                         <aside class="widget widget_contact">
-                            <h3 class="widget-title h4">Encuentranos en:</h3>
-                            <ul>
-                                <li><i class="fa fa-map-marker"></i>Dir. CR 33 # 28-10 INT 313</li>
-                                <li><i class="icon icon-phone"></i>+574 2985861</li>
-                                 <li><i class="fa fa-mobile"></i>+57 350 7070746</li>
-                                <li><i class="fa fa-envelope-o"></i><a href="#">churtado@sigmaip.co</a></li>
-                               
-                                
+                            <h2 class="widget-title h2" style="font-size:30px;font-weight:bold">Contactanos:</h2>
+                             <aside class="w">
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i>Dir. CR 77C # 48-98 </li>
+                                    <li><i class="icon icon-phone"></i>+574 5818740</li>
+                                    <li><i class="fa fa-mobile"></i>+57 317 4411859</li>
+                                    <li><i class="fa fa-envelope-o"></i>alejovelez10@gmail.com</li>
+                                </ul>
+                            </aside><!-- /widget_contact -->
+                            <ul class="social-list" "><br>
+                                 <a href="#" class="text-center" style="margin-bottom:20px;margin-right:10px;">
+                                 
+                            <i class="fa fa-facebook" style = "    padding: 14px 24px;color:#3b9bb9;
+    background: white;
+    font-size: 40px;
+    border-radius: 50%;" aria-hidden="true"></i></a>
+                               <a href="#" class="text-center" style="margin-bottom:20px;margin-right:10px;">
+                                 
+                            <i class="fa fa-twitter" style = "       padding: 16px 14px;
+    color: #3b9bb9;
+    background: white;
+    font-size: 36px;
+    border-radius: 50%;" aria-hidden="true"></i></a>
+     <a href="#" class="text-center" style="margin-bottom:20px;margin-right:10px;">
+                                 
+                            <i class="fa fa-instagram" style = "    padding: 13px 18px;color:#3b9bb9;
+    background: white;
+    font-size: 40px;
+    border-radius: 50%;" aria-hidden="true"></i></a>
+     <a href="#" class="text-center" style="margin-bottom:20px;">
+                                 
+                            <i class="fa fa-linkedin" style = "    padding: 13px 18px;color:#3b9bb9;
+    background: white;
+    font-size: 40px;
+    border-radius: 50%;" aria-hidden="true"></i></a>
                             </ul>
                         </aside><!-- /widget_contact -->
                     </div><!-- /col -->
+ <div class="col-md-6 ">
+                        <aside class="widget widget_subscribe">
+                              <div class="alert alert-success" style="margin-top:5px;display:none">
+                Tu contacto se envío con exito.
+            </div>     
+                                 <%=form_tag create_contacto_path, method: :post, remote:true do %>
+                                 <div class="group clearfix">
+                                         <div class="group-item mb-30">
+                                 <%= text_field_tag :name, nil,placeholder: "Nombre" %>
+                                          </div>
+                                          <div class="group-item mb-30">
+                                 <%= email_field_tag :email, nil, placeholder: "Email" %>
+                                   </div>
+                                          </div>
+                              
+                                 <%= text_area_tag :message,nil, placeholder: "Mensaje", class: "mb-20" %>
 
-                    <div class="col-md-3 col-md-pull-3 col-sm-6 col-xs-12">
-                        <aside class="widget widget_infomation">
-                            <h3 class="widget-title h4">Servicios</h3>
-                            <ul class="list-style">
-                                <li><a href="#">Ingeniera Electrica</a></li>
-                                <li><a href="#">Instrumentación y Control</a></li>
-                                <li><a href="#">Telecomunicaciónes</a></li>
-                                <li><a href="#">Consultoria e Interventoria </a></li>
-                                
-                            </ul>
-                        </aside><!-- /widget_infomation -->
+                                 <%= submit_tag "Enviar Mensaje", class: "btn btn-primary radius"%>
+                                 <div id="contact-content" style="padding-top: 20px"></div>
+                            <%end%>           
+
+                          
+                    
+                        </aside><!-- /widget_subscribe -->
                     </div><!-- /col -->
                 </div><!-- /row -->
             </div><!-- /container -->
@@ -765,12 +553,7 @@
 
         <div class="foot-credit">
             <div class="container">
-                <ul>
-                    <li><%=link_to "Administrar", services_path,  data: { turbolinks: false }%></li>
-                    <li><%= link_to "Trabaje con nosotros", trabajemos_path,  data: { turbolinks: false }%></li>
-     
-                  
-                </ul>
+             
                 <p>Cortana &copy; 2015 By MegaDrupal. All rights Reserved</p>
             </div><!-- /container -->
         </div><!-- /foot-credit -->
@@ -780,3 +563,225 @@
 
 <!-- JQUERY -->
 
+<style>
+
+/*
+Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pricing-Table?list=tags&tag=pricing_table
+*/
+
+/*--------- Font ------------*/
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*------ utiltity classes -----*/
+.fl{ float:left; }
+.fr{ float: right; }
+/*its also known as clearfix*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
+}
+.pricing-table p
+{
+    color:white;
+}
+
+.wrapper {
+    
+}
+.pricing-table {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    padding-right: 0;
+}
+.pricing-table .heading{
+    color: #9C9E9F;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+.block{
+    width: 30%;    
+    margin: 0 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;    
+/*    border: 1px solid red;*/
+}
+/*Shared properties*/
+.title,.pt-footer{
+    color: #FEFEFE;
+    text-transform: capitalize;
+    line-height: 2.5;
+    position: relative;
+}
+.content{
+    position: relative;
+    color: #FEFEFE;
+    padding: 20px 0 10px 0;
+}
+/*arrow creation*/
+.content:after, .content:before,.pt-footer:before,.pt-footer:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.pt-footer:after,.pt-footer:before{
+    top:0;
+}
+.content:after,.pt-footer:after {
+    border-color: rgba(136, 183, 213, 0);   
+    border-width: 5px;
+    margin-left: -5px;
+}
+/*/arrow creation*/
+.price{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+.price span{    
+    font-size: 6rem;
+    letter-spacing: 8px;
+    font-weight: bold;        
+}
+.price sup{
+    font-size: 1.5rem;    
+    position: absolute;    
+    top: 12px;
+    left: -12px;
+}
+.hint{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.features{
+    list-style-type: none;    
+    background: #FFFFFF;
+    text-align: left;
+    color: #9C9C9C;
+    padding:30px 22%;
+    font-size: 0.9rem;
+}
+.features li{
+    padding:15px 0;
+    width: 100%;
+}
+.features li span{
+   padding-right: 0.4rem; 
+}
+.pt-footer{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+/*PERSONAL*/
+.personal .title{        
+    background: #5bc0de;    
+}
+.personal .content,.personal .pt-footer{
+    background: #5bc0de;
+}
+.personal .content:after{   
+    border-top-color: #5bc0de;  
+}
+.personal .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+/*PROFESSIONAL*/
+.professional .title{
+    background: #5bc0de;
+}
+.professional .content,.professional .pt-footer{
+    background: #5bc0de;
+}
+.professional .content:after{   
+    border-top-color: #5bc0de;  
+}
+.professional .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+/*BUSINESS*/
+.business .title{
+    background: #5bc0de;
+}
+.business .content,.business .pt-footer{
+    background: #5bc0de;
+}
+.business .content:after{   
+    border-top-color: #5bc0de;  
+}
+.business .pt-footer:after {    
+    border-top-color: #FFFFFF;  
+}
+    
+</style>
+
+
+<script>
+    $(document).ready(function () {
+  $(document).on("scroll", onScroll);
+
+  $('nav a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
+
+    $('nav a').each(function () {
+      $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+
+    var target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top+2
+    }, 500, 'swing', function () {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+    });
+  });
+});
+
+function onScroll(event){
+  var scrollPosition = $(document).scrollTop();
+  $('nav a').each(function () {
+    var currentLink = $(this);
+    var refElement = $(currentLink.attr("href"));
+    if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+      $('nav a').removeClass("active");
+      currentLink.addClass("active");
+    }
+    else{
+      currentLink.removeClass("active");
+    }
+  });
+}
+</script>
