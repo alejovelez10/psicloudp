@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   resources :teams
   resources :services
   devise_for :users
-  root 'home#index'
-  get 'home/inicio', as: "inicio"
+  root 'home#inicio'
+
   get 'servicios' , to: "home#servicios", as: "servicios"
   get 'experiencias' , to: "home#experiencias", as: "experiencias"
   get 'entradas/:categoria' , to: "home#noticias", as: "noticias"
