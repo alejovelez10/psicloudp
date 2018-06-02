@@ -1,4 +1,4 @@
-body {
+.body {
   position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -6729,7 +6729,7 @@ button.mfp-arrow:after {
 
 
 .home{
-    background: url(../../images/hcp.jpg) no-repeat scroll  center center;
+    background: url("https://mybc1.s3.amazonaws.com/uploads/rseguimiento/evidencia/178/hcp_retocada_2.jpg") no-repeat scroll  center center;
     background-size: cover;
     position: relative;
     padding-top: 220px;
