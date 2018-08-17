@@ -195,7 +195,7 @@
                                         <h3>Estadisticas</h3>
                                         <p style="margin-bottom:5px;">- Pacientes ingresados por mes.</p>
                                         <p style="margin-bottom:5px;">- Pacientes por edad (mayores/menores).</p>
-                                        <p style="margin-bottom:5px;">- Pacientes por estado estado(activos/inactivos)</p>
+                                        <p style="margin-bottom:5px;">- Pacientes por estado(activos/inactivos)</p>
                                         <p style="margin-bottom:5px;">- Pacientes por genero</p>
                                        
                                     </div>
@@ -301,9 +301,9 @@
         <br><br>
         <h2 class="section-header center" style="font-size: 20px;margin-left:20px;">Precios</h2>
         <div class="pricing-table group">
-              
-            <!-- PERSONAL -->
-            <div class="block personal fl">
+           <div class="row">
+                  <div class="col-md-4">
+                              <div class="block personal fl">
                 <h2 class="title">personal</h2>
                 <!-- CONTENT -->
                 <div class="content">
@@ -312,7 +312,7 @@
                         <span>45.000 COP</span>
                         <sub style="font-size:20px;">/mo.</sub>
                     </p>
-                    <p class="hint">Psiclogos Independientes</p>
+                    <p class="hint">Psicologos Independientes</p>
                 </div>
                 <!-- /CONTENT -->
                 <!-- FEATURES -->
@@ -328,15 +328,18 @@
                 </div>
                 <!-- /PT-FOOTER -->
             </div>
-            <!-- /PERSONAL -->
-            <!-- PROFESSIONAL -->
+
+                  </div>
+                  <div class="col-md-4">
+                
+           
             <div class="block professional fl">
-                <h2 class="title">Clinica</h2>
+                <h2 class="title">Clinica(1)</h2>
                 <!-- CONTENT -->
                 <div class="content">
                     <p class="price">
                         <sup>$</sup>
-                        <span>95.000 COP</span>
+                        <span>135.000 COP</span>
                         <sub>/mo.</sub>
                     </p>
                     <p class="hint">Consultorio hasta 5 Psicologos</p>
@@ -355,15 +358,19 @@
                 </div>
                 <!-- /PT-FOOTER -->
             </div>
-            <!-- /PROFESSIONAL -->
-            <!-- BUSINESS -->
-            <div class="block business fl">
-                <h2 class="title">Clinica</h2>
+              </div>   
+            <!-- PERSONAL -->
+    
+            <!-- /PERSONAL -->
+            <!-- PROFESSIONAL -->
+            <div class="col-md-4">
+                         <div class="block business fl">
+                <h2 class="title">Clinica(2)</h2>
                 <!-- CONTENT -->
                 <div class="content">
                     <p class="price">
                         <sup>$</sup>
-                        <span>130.000 COP</span>
+                        <span>245.000 COP</span>
                         <sub>/mo.</sub>
                     </p>
                     <p class="hint">Consultorio hasta 10 Psicologos</p>
@@ -384,6 +391,12 @@
                 </div>
                 <!-- /PT-FOOTER -->
             </div>
+            </div>
+
+             </div>
+            <!-- /PROFESSIONAL -->
+            <!-- BUSINESS -->
+       
             <!-- /BUSINESS -->
         </div>
         <!-- /PRICING-TABLE -->
@@ -622,8 +635,8 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
     margin-bottom: 4rem;
 }
 .block{
-    width: 30%;    
-    margin: 0 15px;
+    width: 100%;    
+    margin: 0 15px 40px 0;
     overflow: hidden;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -683,11 +696,12 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
     font-size: 1.5rem;
 }
 .features{
-    list-style-type: none;    
+    list-style-type: none;
     background: #FFFFFF;
     text-align: left;
-    color: #9C9C9C;
-    padding:30px 10%;
+    color: #727272;
+    padding: 30px 10%;
+    background: #f4f4f4;
     font-size: 0.9rem;
 }
 .features li{
