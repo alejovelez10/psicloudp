@@ -1,7 +1,7 @@
 class AlertMailer < ApplicationMailer
 	def contact_mail(contact)
        @contact = contact
-       mail(to: "alejovelez10@gmail.com", subject: "Alguien nos contacto")
+       mail(to: "ventas@psicloud.co", subject: "Alguien nos contacto")
      end
      def pqrs_mail(pqrs)
        @pqrs = pqrs
